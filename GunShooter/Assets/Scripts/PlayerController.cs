@@ -54,11 +54,11 @@ public class PlayerController : CharacterController
   
     void SelectGun()
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown("1"))
             gunsFactory.GetGun(GunType.ShotGun);
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown("2"))
             gunsFactory.GetGun(GunType.SniperRifle);
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown("3"))
             gunsFactory.GetGun(GunType.MachineGun);
 
     }
